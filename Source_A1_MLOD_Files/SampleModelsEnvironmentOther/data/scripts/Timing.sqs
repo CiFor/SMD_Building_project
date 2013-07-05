@@ -1,0 +1,50 @@
+; Script for timing in the MP mission
+; Replace all "timing" and "ShowTime" scripts and all timing triggers
+; Must run on all computers
+
+; AL - Game logic, non playable, on server only
+
+
+? Param1 == 10000 : Exit
+; No timing
+
+; Variables
+ShowTime = 0;
+_times = [3600, 1800, 1200, 600, 300, 120]
+_strings = [localize "STR_MP_07", localize "STR_MP_06", localize "STR_MP_05", localize "STR_MP_04", localize "STR_MP_03", localize "STR_MP_02"]
+_i = 0;
+_j = 0;
+
+~5
+
+; Initialization - for times set not to max
+#Again
+_j = _times select _i;
+? Param1 < _j : _i = _i+1; goto "Again";
+; Initialization - END
+; Now: _j ... time set by "Param1", _i ... position
+
+? not local AL : goto "NoAL";
+
+#Loop
+@ (Param1-time) <= _j;
+ShowTime = _i+1; publicVariable "ShowTime";
+; _i+1 ... because _i could be 0
+
+#NoAL
+@ (ShowTime > 0)
+_i = (ShowTime - 1);
+; Get back that "real _i"
+hint (_strings select _i);
+#NotShow
+
+
+
+? _i == (count _times) : exit;
+~30
+ShowTime = 0; publicVariable "ShowTime";
+? not local AL : goto "NoAL";
+
+_i=_i+1;
+_j = _times select _i;
+goto "Loop";

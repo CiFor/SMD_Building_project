@@ -1,0 +1,326 @@
+#include "rscCommon.hpp"
+
+class RscAnimatedLetters 
+{
+	idd = 1000;
+	movingEnable = false;
+	
+	class ControlsBackground 
+	{
+		class Background1: RscText 
+		{
+			x = -3; y = -3;
+			w = 6; h = 6;
+			colorBackground[] = {0, 0, 0, 0.2};
+		};
+	};
+	
+	class Controls 
+	{
+		__EXEC(idc = 5000)
+		class L1: RscText 
+		{
+			idc = __EVAL(idc);
+			x = 0.5; y = 0.5;
+			h = 0.3; w = 0.1;
+		};
+		class L2: L1 {idc = __EVAL(idc + 1);};
+		class L3: L1 {idc = __EVAL(idc + 2);};
+		class L4: L1 {idc = __EVAL(idc + 3);};
+		class L5: L1 {idc = __EVAL(idc + 4);};
+		class L6: L1 {idc = __EVAL(idc + 5);};
+		class L7: L1 {idc = __EVAL(idc + 6);};
+		class L8: L1 {idc = __EVAL(idc + 7);};
+		class L9: L1 {idc = __EVAL(idc + 8);};
+		class L10: L1 {idc = __EVAL(idc + 9);};
+		class L11: L1 {idc = __EVAL(idc + 10);};
+		class L12: L1 {idc = __EVAL(idc + 11);};
+		class L13: L1 {idc = __EVAL(idc + 12);};
+		class L14: L1 {idc = __EVAL(idc + 13);};
+		class L15: L1 {idc = __EVAL(idc + 14);};
+		class L16: L1 {idc = __EVAL(idc + 15);};
+		class L17: L1 {idc = __EVAL(idc + 16);};
+		class L18: L1 {idc = __EVAL(idc + 17);};
+		class L19: L1 {idc = __EVAL(idc + 18);};
+		class L20: L1 {idc = __EVAL(idc + 19);};
+		class L21: L1 {idc = __EVAL(idc + 20);};
+		class L22: L1 {idc = __EVAL(idc + 21);};
+		class L23: L1 {idc = __EVAL(idc + 22);};
+		class L24: L1 {idc = __EVAL(idc + 23);};
+		class L25: L1 {idc = __EVAL(idc + 24);};
+		class L26: L1 {idc = __EVAL(idc + 25);};
+		class L27: L1 {idc = __EVAL(idc + 26);};
+		class L28: L1 {idc = __EVAL(idc + 27);};
+		class L29: L1 {idc = __EVAL(idc + 28);};
+		class L30: L1 {idc = __EVAL(idc + 29);};
+		class L31: L1 {idc = __EVAL(idc + 30);};
+		class L32: L1 {idc = __EVAL(idc + 31);};
+		class L33: L1 {idc = __EVAL(idc + 32);};
+		class L34: L1 {idc = __EVAL(idc + 33);};
+		class L35: L1 {idc = __EVAL(idc + 34);};
+		class L36: L1 {idc = __EVAL(idc + 35);};
+		class L37: L1 {idc = __EVAL(idc + 36);};
+		class L38: L1 {idc = __EVAL(idc + 37);};
+		class L39: L1 {idc = __EVAL(idc + 38);};
+		class L40: L1 {idc = __EVAL(idc + 39);};
+		class L41: L1 {idc = __EVAL(idc + 40);};
+		class L42: L1 {idc = __EVAL(idc + 41);};
+		class L43: L1 {idc = __EVAL(idc + 42);};
+		class L44: L1 {idc = __EVAL(idc + 43);};
+		class L45: L1 {idc = __EVAL(idc + 44);};
+		class L46: L1 {idc = __EVAL(idc + 45);};
+		class L47: L1 {idc = __EVAL(idc + 46);};
+		class L48: L1 {idc = __EVAL(idc + 47);};
+		class L49: L1 {idc = __EVAL(idc + 48);};
+		class L50: L1 {idc = __EVAL(idc + 49);};
+		class L51: L1 {idc = __EVAL(idc + 50);};
+		class L52: L1 {idc = __EVAL(idc + 51);};
+		class L53: L1 {idc = __EVAL(idc + 52);};
+		class L54: L1 {idc = __EVAL(idc + 53);};
+		class L55: L1 {idc = __EVAL(idc + 54);};
+		class L56: L1 {idc = __EVAL(idc + 55);};
+		class L57: L1 {idc = __EVAL(idc + 56);};
+		class L58: L1 {idc = __EVAL(idc + 57);};
+		class L59: L1 {idc = __EVAL(idc + 58);};
+		class L60: L1 {idc = __EVAL(idc + 59);};
+		class L61: L1 {idc = __EVAL(idc + 60);};
+		class L62: L1 {idc = __EVAL(idc + 61);};
+		class L63: L1 {idc = __EVAL(idc + 62);};
+		class L64: L1 {idc = __EVAL(idc + 63);};
+		class L65: L1 {idc = __EVAL(idc + 64);};
+		class L66: L1 {idc = __EVAL(idc + 65);};
+		class L67: L1 {idc = __EVAL(idc + 66);};
+		class L68: L1 {idc = __EVAL(idc + 67);};
+		class L69: L1 {idc = __EVAL(idc + 68);};
+		class L70: L1 {idc = __EVAL(idc + 69);};
+		class L71: L1 {idc = __EVAL(idc + 70);};
+		class L72: L1 {idc = __EVAL(idc + 71);};
+		class L73: L1 {idc = __EVAL(idc + 72);};
+		class L74: L1 {idc = __EVAL(idc + 73);};
+		class L75: L1 {idc = __EVAL(idc + 74);};
+		class L76: L1 {idc = __EVAL(idc + 75);};
+		class L77: L1 {idc = __EVAL(idc + 76);};
+		class L78: L1 {idc = __EVAL(idc + 77);};
+		class L79: L1 {idc = __EVAL(idc + 78);};
+		class L80: L1 {idc = __EVAL(idc + 79);};
+		class L81: L1 {idc = __EVAL(idc + 80);};
+		class L82: L1 {idc = __EVAL(idc + 81);};
+		class L83: L1 {idc = __EVAL(idc + 82);};
+		class L84: L1 {idc = __EVAL(idc + 83);};
+		class L85: L1 {idc = __EVAL(idc + 84);};
+		class L86: L1 {idc = __EVAL(idc + 85);};
+		class L87: L1 {idc = __EVAL(idc + 86);};
+		class L88: L1 {idc = __EVAL(idc + 87);};
+		class L89: L1 {idc = __EVAL(idc + 88);};
+		class L90: L1 {idc = __EVAL(idc + 89);};
+		class L91: L1 {idc = __EVAL(idc + 90);};
+		class L92: L1 {idc = __EVAL(idc + 91);};
+		class L93: L1 {idc = __EVAL(idc + 92);};
+		class L94: L1 {idc = __EVAL(idc + 93);};
+		class L95: L1 {idc = __EVAL(idc + 94);};
+		class L96: L1 {idc = __EVAL(idc + 95);};
+		class L97: L1 {idc = __EVAL(idc + 96);};
+		class L98: L1 {idc = __EVAL(idc + 97);};
+		class L99: L1 {idc = __EVAL(idc + 98);};
+		class L100: L1 {idc = __EVAL(idc + 99);};
+		class L101: L1 {idc = __EVAL(idc + 100);};
+		class L102: L1 {idc = __EVAL(idc + 101);};
+		class L103: L1 {idc = __EVAL(idc + 102);};
+		class L104: L1 {idc = __EVAL(idc + 103);};
+		class L105: L1 {idc = __EVAL(idc + 104);};
+		class L106: L1 {idc = __EVAL(idc + 105);};
+		class L107: L1 {idc = __EVAL(idc + 106);};
+		class L108: L1 {idc = __EVAL(idc + 107);};
+		class L109: L1 {idc = __EVAL(idc + 108);};
+		class L110: L1 {idc = __EVAL(idc + 109);};
+		class L111: L1 {idc = __EVAL(idc + 110);};
+		class L112: L1 {idc = __EVAL(idc + 111);};
+		class L113: L1 {idc = __EVAL(idc + 112);};
+		class L114: L1 {idc = __EVAL(idc + 113);};
+		class L115: L1 {idc = __EVAL(idc + 114);};
+		class L116: L1 {idc = __EVAL(idc + 115);};
+		class L117: L1 {idc = __EVAL(idc + 116);};
+		class L118: L1 {idc = __EVAL(idc + 117);};
+		class L119: L1 {idc = __EVAL(idc + 118);};
+		class L120: L1 {idc = __EVAL(idc + 119);};
+		class L121: L1 {idc = __EVAL(idc + 120);};
+		class L122: L1 {idc = __EVAL(idc + 121);};
+		class L123: L1 {idc = __EVAL(idc + 122);};
+		class L124: L1 {idc = __EVAL(idc + 123);};
+		class L125: L1 {idc = __EVAL(idc + 124);};
+		class L126: L1 {idc = __EVAL(idc + 125);};
+		class L127: L1 {idc = __EVAL(idc + 126);};
+		class L128: L1 {idc = __EVAL(idc + 127);};
+		class L129: L1 {idc = __EVAL(idc + 128);};
+		class L130: L1 {idc = __EVAL(idc + 129);};
+		class L131: L1 {idc = __EVAL(idc + 130);};
+		class L132: L1 {idc = __EVAL(idc + 131);};
+		class L133: L1 {idc = __EVAL(idc + 132);};
+		class L134: L1 {idc = __EVAL(idc + 133);};
+		class L135: L1 {idc = __EVAL(idc + 134);};
+		class L136: L1 {idc = __EVAL(idc + 135);};
+		class L137: L1 {idc = __EVAL(idc + 136);};
+		class L138: L1 {idc = __EVAL(idc + 137);};
+		class L139: L1 {idc = __EVAL(idc + 138);};
+		class L140: L1 {idc = __EVAL(idc + 139);};
+		class L141: L1 {idc = __EVAL(idc + 140);};
+		class L142: L1 {idc = __EVAL(idc + 141);};
+		class L143: L1 {idc = __EVAL(idc + 142);};
+		class L144: L1 {idc = __EVAL(idc + 143);};
+		class L145: L1 {idc = __EVAL(idc + 144);};
+		class L146: L1 {idc = __EVAL(idc + 145);};
+		class L147: L1 {idc = __EVAL(idc + 146);};
+		class L148: L1 {idc = __EVAL(idc + 147);};
+		class L149: L1 {idc = __EVAL(idc + 148);};
+		class L150: L1 {idc = __EVAL(idc + 149);};
+		class L151: L1 {idc = __EVAL(idc + 150);};
+		class L152: L1 {idc = __EVAL(idc + 151);};
+		class L153: L1 {idc = __EVAL(idc + 152);};
+		class L154: L1 {idc = __EVAL(idc + 153);};
+		class L155: L1 {idc = __EVAL(idc + 154);};
+		class L156: L1 {idc = __EVAL(idc + 155);};
+		class L157: L1 {idc = __EVAL(idc + 156);};
+		class L158: L1 {idc = __EVAL(idc + 157);};
+		class L159: L1 {idc = __EVAL(idc + 158);};
+		class L160: L1 {idc = __EVAL(idc + 159);};
+		class L161: L1 {idc = __EVAL(idc + 160);};
+		class L162: L1 {idc = __EVAL(idc + 161);};
+		class L163: L1 {idc = __EVAL(idc + 162);};
+		class L164: L1 {idc = __EVAL(idc + 163);};
+		class L165: L1 {idc = __EVAL(idc + 164);};
+		class L166: L1 {idc = __EVAL(idc + 165);};
+		class L167: L1 {idc = __EVAL(idc + 166);};
+		class L168: L1 {idc = __EVAL(idc + 167);};
+		class L169: L1 {idc = __EVAL(idc + 168);};
+		class L170: L1 {idc = __EVAL(idc + 169);};
+		class L171: L1 {idc = __EVAL(idc + 170);};
+		class L172: L1 {idc = __EVAL(idc + 171);};
+		class L173: L1 {idc = __EVAL(idc + 172);};
+		class L174: L1 {idc = __EVAL(idc + 173);};
+		class L175: L1 {idc = __EVAL(idc + 174);};
+		class L176: L1 {idc = __EVAL(idc + 175);};
+		class L177: L1 {idc = __EVAL(idc + 176);};
+		class L178: L1 {idc = __EVAL(idc + 177);};
+		class L179: L1 {idc = __EVAL(idc + 178);};
+		class L180: L1 {idc = __EVAL(idc + 179);};
+		class L181: L1 {idc = __EVAL(idc + 180);};
+		class L182: L1 {idc = __EVAL(idc + 181);};
+		class L183: L1 {idc = __EVAL(idc + 182);};
+		class L184: L1 {idc = __EVAL(idc + 183);};
+		class L185: L1 {idc = __EVAL(idc + 184);};
+		class L186: L1 {idc = __EVAL(idc + 185);};
+		class L187: L1 {idc = __EVAL(idc + 186);};
+		class L188: L1 {idc = __EVAL(idc + 187);};
+		class L189: L1 {idc = __EVAL(idc + 188);};
+		class L190: L1 {idc = __EVAL(idc + 189);};
+		class L191: L1 {idc = __EVAL(idc + 190);};
+		class L192: L1 {idc = __EVAL(idc + 191);};
+		class L193: L1 {idc = __EVAL(idc + 192);};
+		class L194: L1 {idc = __EVAL(idc + 193);};
+		class L195: L1 {idc = __EVAL(idc + 194);};
+		class L196: L1 {idc = __EVAL(idc + 195);};
+		class L197: L1 {idc = __EVAL(idc + 196);};
+		class L198: L1 {idc = __EVAL(idc + 197);};
+		class L199: L1 {idc = __EVAL(idc + 198);};
+		class L200: L1 {idc = __EVAL(idc + 199);};
+		class L201: L1 {idc = __EVAL(idc + 200);};
+		class L202: L1 {idc = __EVAL(idc + 201);};
+		class L203: L1 {idc = __EVAL(idc + 202);};
+		class L204: L1 {idc = __EVAL(idc + 203);};
+		class L205: L1 {idc = __EVAL(idc + 204);};
+		class L206: L1 {idc = __EVAL(idc + 205);};
+		class L207: L1 {idc = __EVAL(idc + 206);};
+		class L208: L1 {idc = __EVAL(idc + 207);};
+		class L209: L1 {idc = __EVAL(idc + 208);};
+		
+		class Team: RscText 
+		{
+			idc = 666;
+			x = 0.05; y = 0.05;
+			colorText[] = {1, 1, 1, 1};
+			w = 0.6;
+			h = 0.1;
+			sizeEx = 0.075;
+			text = $STR_TIT_ADD_GRAPHICS;
+		};
+		
+		class Bohemia: RscText 
+		{
+			idc = 900;
+			x = 0.3; y = 0.5;
+			colorText[] = {1, 1, 1, 1};
+			w = 0.4;
+			h = 0.1;
+			sizeEx = 0.04;
+			text = $STR_TIT_BOH_INT;
+		};
+		
+		class CopyrightBoh: RscText 
+		{
+			idc = 901;
+			x = 0; y = 0.5;
+			colorText[] = {1, 1, 1, 1};
+			w = 1;
+			h = 0.1;
+			sizeEx = 0.02;
+			style = ST_CENTER + ST_MULTI + ST_NO_RECT;
+			lineSpacing = 1;
+			text = $STR_CREDIT_COPYRIGHT;
+		};
+		class CopyrightVorb: RscText 
+		{
+			idc = 902;
+			x = 0; y = 0.5;
+			colorText[] = {1, 1, 1, 1};
+			w = 1;
+			h = 0.1;
+			sizeEx = 0.02;
+			style = ST_CENTER + ST_MULTI + ST_NO_RECT;
+			lineSpacing = 1;
+			text = $STR_COPY;
+		};
+		class CopyrightAL: RscText 
+		{
+			idc = 903;
+			x = 0; y = 0.5;
+			colorText[] = {1, 1, 1, 1};
+			w = 1;
+			h = 0.1;
+			sizeEx = 0.02;
+			style = ST_CENTER + ST_MULTI + ST_NO_RECT;
+			lineSpacing = 1;
+			text = "Open AL Copyright © 1999-2006 Creative Technology Limited";
+		};
+		class CopyrightSpeex: RscText 
+		{
+			idc = 904;
+			x = 0; y = 1;
+			colorText[] = {1, 1, 1, 1};
+			w = 1;
+			h = 0.1;
+			sizeEx = 0.02;
+			style = ST_CENTER + ST_MULTI + ST_NO_RECT;
+			lineSpacing = 1;
+			text = "Speex Codec Copyright © 2002 Jean-Marc Valin";
+		};
+
+		class CopyrightSpy: RscText
+		{
+			idc = 905;
+			colorText[] = {1, 1, 1, 1};
+			style = ST_CENTER + ST_MULTI + ST_NO_RECT;
+			lineSpacing = 1;
+			
+			x = 0; y = 0.5;
+			w = 1; h = 0.3;
+			sizeEx = 0.02;
+			text = $STR_ARMA_SPLASH_4b;
+		};
+		
+		
+
+	};
+};
+
+briefing = false;
+debriefing = false;

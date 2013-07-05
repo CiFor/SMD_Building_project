@@ -1,0 +1,11 @@
+_ppos = getPos _this
+_px=_ppos select 0
+_pz=_ppos select 1
+BIS_CAMERA = "camera" camCreate [_px+1, _pz+1, 2 ]
+BIS_CAMERA camCommand "manual on"
+BIS_CAMERA camCommand "inertia off"
+BIS_CAMERA cameraEffect ["internal","back"]
+; wait until destroy is forced or camera auto-destroyed
+@cheat0 || BIS_CAMERA!=BIS_CAMERA
+aP cameraEffect ["terminate","back"]
+camDestroy BIS_CAMERA

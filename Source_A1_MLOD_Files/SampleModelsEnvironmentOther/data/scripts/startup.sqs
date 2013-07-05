@@ -1,0 +1,37 @@
+? (distributionRegion==1) : goto "US" 
+
+#EU
+disableUserInput true
+
+titleRsc ["SplashBohemia", "PLAIN"]
+~4
+titleRsc ["SplashArmA", "PLAIN"]
+~4
+titleRsc ["SplashText1", "PLAIN"]
+~4
+titleRsc ["SplashCopyright", "PLAIN"]
+~4
+titleText ["", "PLAIN"]
+disableUserInput false
+goto "exit"
+
+#US
+disableUserInput true
+
+titleRsc ["SplashUS", "PLAIN"]
+~4
+titleRsc ["SplashBohemia", "PLAIN"]
+~4
+titleRsc ["SplashCombatOperations", "PLAIN"]
+~4
+titleRsc ["SplashCopyrightUS", "PLAIN"]
+~4
+titleRsc ["SplashNVIDIA", "PLAIN"]
+~4
+titleText ["", "PLAIN"]
+disableUserInput false
+goto "exit"
+
+#exit
+exit
+
