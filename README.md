@@ -18,9 +18,6 @@ Dev-Heaven Community Modding Bible:
 
 https://dev-heaven.net/projects/cmb/wiki
 
-All Configs for ALL vehicles:
-https://dl.dropboxusercontent.com/u/38551057/allInOne.cpp
-
 A1 MLOD Source:
 http://community.bistudio.com/wiki/ArmA:_Sample_Models
 
