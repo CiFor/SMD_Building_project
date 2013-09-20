@@ -1,6 +1,36 @@
 SMD_Building_project
 ====================
 
+Welcome to the poject, We are still organizing, however here is a quick guide:
+
+
++++++++++++++++
+
+Required Tools:
+
+Bohemia Tools:
+
+https://community.bistudio.com/wiki/BI_Tools_2.5 Github for windows:
+http://windows.github.com/
+
+Usefull Links:
+Dev-Heaven Community Modding Bible:
+
+https://dev-heaven.net/projects/cmb/wiki
+
+All Configs for ALL vehicles:
+https://dl.dropboxusercontent.com/u/38551057/allInOne.cpp
+
+A1 MLOD Source:
+http://community.bistudio.com/wiki/ArmA:_Sample_Models
+
+For the building project you only need the "Environment Models Complete Pack"
+
+
++++++++++++++++
+
+LICENSE
+
 Arma 1 MLOD Building Project
 
 This will be a fully open project as per the Aram 1 MLOD release license:
