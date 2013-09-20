@@ -21,5 +21,6 @@ Please ensure all models are made with the SMD_ ofpec tag to ensure continuity.
 Any Questions you can email or contact NonovUrbizniz as below:
 
 Email - dayzsahranihelp@gmail.com 
-TS3 - EHDGaming.co.uk - 109.70.148.17
 
+Name:Sahrani Development Teamspeak
+Address:cifordayzserver.guildshout.com:9995
