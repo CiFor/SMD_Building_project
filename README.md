@@ -49,5 +49,9 @@ Any Questions you can email or contact NonovUrbizniz as below:
 
 Email - dayzsahranihelp@gmail.com 
 
+Teamspeak Server:
 Name:Sahrani Development Teamspeak
 Address:cifordayzserver.guildshout.com:9995
+
+Skype:
+nonovurbizniz
